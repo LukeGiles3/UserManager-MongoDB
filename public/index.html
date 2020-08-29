@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Student Management</h1>
+    <div>
+        <a href="/getStudent">Show Students</a>
+    </div>
+    <div>
+        <h1>Add New Student</h1>
+        <form action="/addStudents" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Update Student Record</h1>
+        <form action="/updateStudentAge" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Delete Student Record</h1>
+        <form action="/deleteStudent" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Search for a Student</h1>
+        <form action="/searchStudent" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h2>Sort the Students</h2>
+        <form action="/sortStudent" method="POST">
+            <label for="order">Sort in </label>
+            <select name="order" id="order">
+                <option value="asc">Ascending Order</option>
+                <option value="desc">Descending Order</option>
+            </select>
+            <label for="students"> by:</label>
+            <select name="students" id="students">
+                <option value="first_name">First Name</option>
+                <option value="last_name">Last Name</option>
+                <option value="age">Age</option>
+                <option value="email">Email</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
+</body>
+</html>
