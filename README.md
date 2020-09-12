@@ -1,2 +1,2 @@
 # UserManager-MongoDB
-start application by running node index
+start application by running npm i then node index
